@@ -65,14 +65,39 @@ const quizQuestions = [
         correctAnswer: "6"
     },
     { //14
-        question: 
-    }
-
-
-
-
-
-
-
+        question: "Where will the 2020 Super Bowl be played?",
+        choices: ["MetLife Stadium", "Gillette Stadium", "Three Rivers Stadium", "Hard Rock Stadium"],
+        correctAnswer: "Hard Rock Stadium"
+    },
+    { //15
+        question: "What team plays at Lambeau Field?",
+        choices: ["Green Bay Packers", "Philadelphia Eagles", "Washington Redskins", "Carolina Panthers"],
+        correctAnswer: "Green Bay Packers"
+    },
+    { //16
+        question: "What team plays at CenturyLink Field?",
+        choices: ["Tampa Bay Buccaneers", "Seattle Seahawks", "Arizona Cardinals", "San Francisco 49ers"],
+        correctAnswer: "Seattle Seahawks"
+    }, 
+    { //17
+        question: "Where is the Pro Football Hall of Fame located?",
+        choices: ["Springfield, MA ", "Washington, D.C.", "Columbus, OH", "Canton, OH"],
+        correctAnswer: "Canton, OH"
+    }, 
+    { //18
+        question: "Patrick Mahomes, the 2019 NFL MVP plays for what team?",
+        choices: ["Miami Dolphins", "Kansas City Chiefs", "San Francisco 49ers", "Dallas Cowboys"],
+        correctAnswer: "Kansas City Chiefs"
+    }, 
+    { //19
+        question: "After a perfect 16-0 season, the New England Patriots lost Super Bowl 42 to what team?",
+        choices: ["New York Giants", "New York Jets", "Detroit Lions", "Green Bay Packers"],
+        correctAnswer: "New York Giants"
+    }, 
+    { //20
+        question: "How many Super Bowl rings does Super Bowl MVP Drew Brees have?",
+        choices: ["One", "Two", "Three", "Four"],
+        correctAnswer: "One"
+    }, 
 
 ];
