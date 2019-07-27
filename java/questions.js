@@ -25,7 +25,7 @@ const quizQuestions = [
         correctAnswer: "Chicago Bears"
     },
     { //6
-        questions: "Which team was given the nickname America's Team in the 1979 NFL season?",
+        question: "Which team was given the nickname America's Team in the 1979 NFL season?",
         choices: ['Houston Texans', "New York Giants", "New England Patriots", "Dallas Cowboys"],
         correctAnswer: "Dallas Cowboys"
     },
@@ -100,4 +100,18 @@ const quizQuestions = [
         correctAnswer: "One"
     }, 
 
+];
+
+const yesImages = [
+    '/style/images/yes1.gif',
+    '/style/images/yes2.gif',
+    '/style/images/yes3.gif',
+    '/style/images/yes4.gif',
+];
+
+const noImages = [
+    '/style/images/no1.gif',
+    '/style/images/no2.gif',
+    '/style/images/no3.gif',
+    '/style/images/no4.gif',
 ];
