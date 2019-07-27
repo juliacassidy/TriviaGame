@@ -1,9 +1,9 @@
 // values
 
 let counter = 30;
-let currentQuestion= 0;
-let score =0;
-let lost= 0;
+let currentQuestion = 0;
+let score = 0;
+let lost = 0;
 let timer;
 
 // when timer is up, go to next question
@@ -16,7 +16,7 @@ function nextQuestion() {
         currentQuestion++;
         loadQuestion();
     }
-    
+
 }
 
 // Start 30 seconds timer 
@@ -44,8 +44,8 @@ function loadQuestion() {
     counter = 30;
     timer = setInterval(countDown, 1000);
 
-    const question = quizQuestions[currentQuestion].question; 
-    const choices = quizQuestions[currentQuestion].choices; 
+    const question = quizQuestions[currentQuestion].question;
+    const choices = quizQuestions[currentQuestion].choices;
 
     $('#time').html('Timer: ' + counter);
     $('#game').html(`
@@ -67,7 +67,7 @@ function loadChoices(choices) {
 
 // show correct or wrong, then go to the next question
 
-$(document).on('click', '.choice', function() {
+$(document).on('click', '.choice', function () {
     clearInterval(timer);
     const selectedAnswer = $(this).attr('data-answer');
     const correctAnswer = quizQuestions[currentQuestion].correctAnswer;
@@ -79,7 +79,7 @@ $(document).on('click', '.choice', function() {
         setTimeout(nextQuestion, 3 * 1000);
     } else {
         lost++;
-        console.log('Lost!!!!');
+        console.log('Lost!');
         preloadImage('lost');
         setTimeout(nextQuestion, 3 * 1000);
     }
@@ -88,8 +88,8 @@ $(document).on('click', '.choice', function() {
 
 function displayResult() {
     const result = `
-        <p>You get ${score} questions(s) right</p>
-        <p>You missed ${lost} questions(s)</p>
+        <p>You got ${score} questions right</p>
+        <p>You got ${lost} questions wrong</p>
         <p>You answered ${quizQuestions.length} total questions.</p>
         <button class="btn btn-primary" id="reset">Reset Game</button>
     `;
@@ -98,7 +98,7 @@ function displayResult() {
 }
 
 
-$(document).on('click', '#reset', function() {
+$(document).on('click', '#reset', function () {
     counter = 30;
     currentQuestion = 0;
     score = 0;
@@ -117,11 +117,6 @@ function loadRemainingQuestion() {
 }
 
 
-function randomImage(images) {
-    const random = Math.floor(Math.random() * images.length);
-    const randomImage = images[random];
-    return randomImage;
-}
 
 
 // Display gif and correct/wrong message
@@ -143,7 +138,7 @@ function preloadImage(status) {
     }
 }
 
-$('#start').click(function() {
+$('#start').click(function () {
     $('#start').remove();
     $('#time').html(counter);
     loadQuestion();
