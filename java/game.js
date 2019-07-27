@@ -6,12 +6,11 @@ let score =0;
 let lost= 0;
 let timer;
 
-// If the timer is over, then go to the next question
+// when timer is up, go to next question
 function nextQuestion() {
     const isQuestionOver = (quizQuestions.length - 1) === currentQuestion;
     if (isQuestionOver) {
-        // TODO
-        console.log('Game is over!!!!!');
+        console.log('Game has ended.');
         displayResult();
     } else {
         currentQuestion++;
@@ -20,7 +19,7 @@ function nextQuestion() {
     
 }
 
-// Start a 30 seconds timer for user to respond or choose an answer to each question
+// Start 30 seconds timer 
 function timeUp() {
     clearInterval(timer);
 
@@ -40,13 +39,13 @@ function countDown() {
     }
 }
 
-// Display the question and the choices to the browser
+// Show the question & choices
 function loadQuestion() {
     counter = 30;
     timer = setInterval(countDown, 1000);
 
-    const question = quizQuestions[currentQuestion].question; // 
-    const choices = quizQuestions[currentQuestion].choices; // 
+    const question = quizQuestions[currentQuestion].question; 
+    const choices = quizQuestions[currentQuestion].choices; 
 
     $('#time').html('Timer: ' + counter);
     $('#game').html(`
@@ -66,8 +65,8 @@ function loadChoices(choices) {
     return result;
 }
 
-// Either correct/wrong choice selected, go to the next question
-// Event Delegation
+// show correct or wrong, then go to the next question
+
 $(document).on('click', '.choice', function() {
     clearInterval(timer);
     const selectedAnswer = $(this).attr('data-answer');
@@ -75,7 +74,7 @@ $(document).on('click', '.choice', function() {
 
     if (correctAnswer === selectedAnswer) {
         score++;
-        console.log('Winsss!!!!');
+        console.log('Win!');
         preloadImage('win');
         setTimeout(nextQuestion, 3 * 1000);
     } else {
@@ -91,7 +90,7 @@ function displayResult() {
     const result = `
         <p>You get ${score} questions(s) right</p>
         <p>You missed ${lost} questions(s)</p>
-        <p>Total questions ${quizQuestions.length} questions(s) right</p>
+        <p>You answered ${quizQuestions.length} total questions.</p>
         <button class="btn btn-primary" id="reset">Reset Game</button>
     `;
 
@@ -125,21 +124,21 @@ function randomImage(images) {
 }
 
 
-// Display a funny giphy for correct and wrong answers
+// Display gif and correct/wrong message
 function preloadImage(status) {
     const correctAnswer = quizQuestions[currentQuestion].correctAnswer;
 
     if (status === 'win') {
         $('#game').html(`
-            <p class="preload-image">Congratulations, you pick the corrrect answer</p>
+            <p class="preload-image">Yay, you are correct!</p>
             <p class="preload-image">The correct answer is <b>${correctAnswer}</b></p>
-            <img src="${randomImage(yesImages)}" />
+            <img src="style/images/yes1.gif" />
         `);
     } else {
         $('#game').html(`
             <p class="preload-image">The correct answer was <b>${correctAnswer}</b></p>
-            <p class="preload-image">You lost pretty bad</p>
-            <img src="${randomImage(noImages)}" />
+            <p class="preload-image">You picked the wrong answer!</p>
+            <img src="style/images/no1.gif" />
         `);
     }
 }

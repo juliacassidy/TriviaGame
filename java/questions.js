@@ -101,17 +101,3 @@ const quizQuestions = [
     }, 
 
 ];
-
-const yesImages = [
-    '/style/images/yes1.gif',
-    '/style/images/yes2.gif',
-    '/style/images/yes3.gif',
-    '/style/images/yes4.gif',
-];
-
-const noImages = [
-    '/style/images/no1.gif',
-    '/style/images/no2.gif',
-    '/style/images/no3.gif',
-    '/style/images/no4.gif',
-];
