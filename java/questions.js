@@ -40,18 +40,33 @@ const quizQuestions = [
         correctAnswer: "Oakland Raiders"
     },
     { //9
-        question:
-        choices:
-        correctAnswer:
+        question: "The longest field goal kick in NFL history, made by Matt Prater, was how many yards?",
+        choices: ["55 yards", "61 yards", "64 yards", "59 yards"],
+        correctAnswer: "64 yards"
+    },
+    { //10
+        quesion: "What team was wide reciever Odell Beckham Jr traded to this offseason?",
+        choices: ["New York Giants", "Cleveland Browns", "Cincinnati Bengals", "Denver Broncos"],
+        correctAnswer: "Cleveland Browns"
+    },
+    { //11
+        question: "Of the three Watt brothers, which one plays for the Pittsburgh Steelers?",
+        choices: ["JJ Watt", "TJ Watt", "Derek Watt", "John Watt"],
+        correctAnswer: "TJ Watt"
+    },
+    { //12
+        question: "Which of the Manning brothers played for 18 seasons, winning two Super Bowls?",
+        choices: ["Peyton Manning", "Eli Manning", "Cooper Manninng", "Archie Manning"],
+        correctAnswer: "Peyton Manning"
+    },
+    { //13
+        question: "How many Super Bowl wins do the Pittsburgh Steelers have?",
+        choices: ["2", "4", "6", "8"],
+        correctAnswer: "6"
+    },
+    { //14
+        question: 
     }
-
-
-
-
-
-
-
-
 
 
 
