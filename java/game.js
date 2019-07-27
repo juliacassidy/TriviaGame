@@ -129,12 +129,18 @@ function preloadImage(status) {
             <p class="preload-image">The correct answer is <b>${correctAnswer}</b></p>
             <img src="style/images/yes1.gif" />
         `);
-    } else {
+    } else if (status === 'lost'){
         $('#game').html(`
             <p class="preload-image">The correct answer was <b>${correctAnswer}</b></p>
             <p class="preload-image">You picked the wrong answer!</p>
             <img src="style/images/no1.gif" />
         `);
+     } else {
+            $('#game').html(`
+                <p class="preload-image"> The correct answer was <b>${correctAnswer}</b></p>
+                <p class="preload-image"> Times up!</p>
+                <img src="style/images/no1.gif" />
+            `);
     }
 }
 
