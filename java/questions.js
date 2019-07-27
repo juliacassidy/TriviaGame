@@ -17,7 +17,7 @@ const quizQuestions = [
     { //4
         question: "Which team was given the nickname The Ain'ts during the 1980 NFL season?",
         choices: ["New Orleans Saints", "Cincinnati Bengals", "Green Bay Packers", "Chicago Bears"],
-        correctAnswer: "New Orleans Saints "
+        correctAnswer: "New Orleans Saints"
     },
     { //5
         question: "The Miami Dolphins had the first undefeated season in NFL history. In 1985, which undefeated team did they beat, to make sure their legacy remained?",
