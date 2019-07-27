@@ -47,7 +47,7 @@ function loadQuestion() {
     const question = quizQuestions[currentQuestion].question;
     const choices = quizQuestions[currentQuestion].choices;
 
-    $('#time').html('Timer: ' + counter);
+    $('#time').html('Time Remaining: ' + counter);
     $('#game').html(`
         <h4>${question}</h4>
         ${loadChoices(choices)}
