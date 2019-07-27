@@ -45,7 +45,7 @@ const quizQuestions = [
         correctAnswer: "64 yards"
     },
     { //10
-        quesion: "What team was wide reciever Odell Beckham Jr traded to this offseason?",
+        question: "What team was wide reciever Odell Beckham Jr traded to this offseason?",
         choices: ["New York Giants", "Cleveland Browns", "Cincinnati Bengals", "Denver Broncos"],
         correctAnswer: "Cleveland Browns"
     },
