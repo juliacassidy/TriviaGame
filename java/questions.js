@@ -5,7 +5,7 @@ const quizQuestions = [
         correctAnswer: "Rams"
     },
     { //2
-        question: "The 2008 Indianapolis Colts franchise joined the NFL in 1953 under which name?",
+        question: "The Indianapolis Colts franchise joined the NFL in 1953 under which name?",
         choices: ["Indianapolis Colts", "Cleveland Colts", "Baltimore Colts", "New York Colts"],
         correctAnswer: "Baltimore Colts"
     },
@@ -30,7 +30,7 @@ const quizQuestions = [
         correctAnswer: "Dallas Cowboys"
     },
     { //7
-        question: "Which team has lost five Super Bowls?",
+        question: "Which of the following teams has lost five Super Bowls?",
         choices: ["Minnesota Vikings", "New England Patriots", "Buffalo Bills", "Kansas City Chiefs"],
         correctAnswer: "New England Patriots"
     },
@@ -55,7 +55,7 @@ const quizQuestions = [
         correctAnswer: "TJ Watt"
     },
     { //12
-        question: "Which of the Manning brothers played for 18 seasons, winning two Super Bowls?",
+        question: "Which of the Manning's played for 18 seasons, winning two Super Bowls?",
         choices: ["Peyton Manning", "Eli Manning", "Cooper Manninng", "Archie Manning"],
         correctAnswer: "Peyton Manning"
     },
@@ -85,7 +85,7 @@ const quizQuestions = [
         correctAnswer: "Canton, OH"
     },
     { //18
-        question: "Patrick Mahomes, the 2019 NFL MVP plays for what team?",
+        question: "Patrick Mahomes, the 2019 NFL MVP, plays for what team?",
         choices: ["Miami Dolphins", "Kansas City Chiefs", "San Francisco 49ers", "Dallas Cowboys"],
         correctAnswer: "Kansas City Chiefs"
     },
